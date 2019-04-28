@@ -12,7 +12,7 @@ color
 '''
 
 
-class Vertex(object):
+class Vertex:
     def __init__(self, n):
         self.name = n
         self.neighbors = []
@@ -37,7 +37,7 @@ verticies{}
 '''
 
 
-class Graph(object):
+class Graph:
     vertices = {}
     time = 0
 
