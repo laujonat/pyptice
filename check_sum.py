@@ -20,10 +20,10 @@ Bonus: Can you do this in one pass?
 
 def two_sum(lst, K):
     lst.sort()
-
+    # O(n)
     for i in range(len(lst)):
         target = K - lst[i]
-        j = binary_search(lst, target)
+        j = binary_search(lst, target)  # O(log(n))
 
         if j == -1:
             continue
