@@ -1,8 +1,3 @@
-"""Implement quick sort in Python.
-Input a list.
-Output a sorted list."""
-
-
 def quicksort(array, low, high):
     if low >= high:
         return array
