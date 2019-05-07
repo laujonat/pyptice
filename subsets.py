@@ -19,6 +19,13 @@ Output:
 # sorting O(nlog(n))
 # call DFS
 # for every element in list,
+'''
+0: []
+1: [1] -> [3]
+2: [1, 2] -> [2]
+3: [1, 2, 3] -> [1, 3]
+
+'''
 
 
 def subsets(nums):
