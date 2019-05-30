@@ -20,16 +20,18 @@ print out:
 
 def median(rr):
     print("current median list", rr)
-
-    if len(rr) == 1:
+    length = len(rr)
+    if length == 1:
         return rr[0]
 
     s = sorted(rr)
-    if len(s) % 2 != 0:
-        return int(s[int(len(s) / 2)])
+    m = int(length / 2)
+    if length % 2 != 0:
+        print(m / 2)
+        return int(s[m])
     else:
-        right = s[int(len(s) / 2)]
-        left = s[int(len(s) / 2) - 1]
+        right = s[m]
+        left = s[m - 1]
         return float((right + left) / 2)
 
 # O(n)
